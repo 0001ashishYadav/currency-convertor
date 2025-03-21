@@ -1,4 +1,4 @@
-import Card from "./components/card";
+import Card from "./components/Card";
 import "./index.css";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
 import { useState } from "react";
@@ -67,7 +67,10 @@ function App() {
             {/* convert button */}
 
             <div className="flex justify-center items-center mt-4">
-              <button type="submit" className="h-[6vh] w-[98%] bg-blue-700 rounded-md text-white">
+              <button
+                type="submit"
+                className="h-[6vh] w-[98%] bg-blue-700 rounded-md text-white"
+              >
                 Convert {from.toUpperCase()} to {to.toUpperCase}
               </button>
             </div>
@@ -75,7 +78,7 @@ function App() {
             {/* swap button */}
 
             <div className="absolute top-[17vh] left-[50%] translate-x-[-50%]">
-              <button 
+              <button
                 onClick={swap}
                 className="bg-blue-700 text-white px-3 py-1 rounded-md border-2 border-white"
               >
